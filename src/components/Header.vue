@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button />
+        <Button text="Add Task"  color="green"/>
     </header>
 </template>
 
@@ -14,6 +14,9 @@ export default {
     },
     components: {
         Button
+    },
+    created() {
+        console.log("in Header.vue");
     }
 }
 </script>
